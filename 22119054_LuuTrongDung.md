@@ -191,4 +191,9 @@ Use John decrypt hashes password save in hashes.txt, with format=md5
 ```sh
 john --format=md5crypt hashes.txt
 ```
+Show pass
+```sh
+john --show hashes.txt
+```
+
 
