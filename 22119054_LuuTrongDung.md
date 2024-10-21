@@ -1,4 +1,4 @@
-# Lab #1,22119054, Luu Trong Dung, INSE331280E_01FIE
+# Lab #1,22119054, Luu Trong Dung, INSE330380E_01FIE
 # Task 1: Software buffer overflow attack
 **Question 1**: 
 - Compile asm program and C program to executable code. 
@@ -148,6 +148,7 @@ Step4: next press f12 to find and save Cockie
 ![](./images/Screenshot%202024-10-21%20094329.png)
 
 **Question 1**: Use sqlmap to get information about all available databases
+
 **Answer 1**: This command includes the URL and cookie saved in the Setup steps
 ```sh
 sqlmap -u "http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=j1jkcruu09uddv6q2jbbc7a125; security=low" --dbs
@@ -156,6 +157,7 @@ sqlmap -u "http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="
 ![](./images/Screenshot%202024-10-21%20094903.png)
 
 **Question 2**: Use sqlmap to get tables, users information
+
 **Answer 2**: The figure below contains 2 tables in the DVWA database, User and Guestbook
 use sqlmap to get tables 
 ```sh
@@ -171,6 +173,7 @@ sqlmap -u "http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="
 
 
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
+
 **Answer 3**:
 
 ```sh
@@ -199,5 +202,5 @@ Show pass
 ```sh
 john --show hashes.txt
 ```
-
+**Conclusion:** In this section, you'll learn how to use basic commands with SQLMAP and John Crypto.
 
