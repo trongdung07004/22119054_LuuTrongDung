@@ -136,12 +136,15 @@ sudo apt install sqlmap
 ```
 
 Step2: next to the browser, type in the URL bar "localhost:80" and log in with (Admin, password)
+
 ![](./images/Screenshot%202024-10-21%20094110.png)
 
 Step3: then select sql injection and fill in 1 user ID of any submit, then copy URl 
+
 ![](./images/Screenshot%202024-10-21%20094223.png)
 
 Step4: next press f12 to find and save Cockie
+
 ![](./images/Screenshot%202024-10-21%20094329.png)
 
 **Question 1**: Use sqlmap to get information about all available databases
@@ -174,6 +177,7 @@ sqlmap -u "http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="
 sqlmap -u "http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=j1jkcruu09uddv6q2jbbc7a125; security=low" -D dvwa -T users --dump   
 ```
 With the above command we get the data in the users table
+
 ![](./images/Screenshot%202024-10-21%20102134.png)
 
 Retrieve the hashed password of any user
